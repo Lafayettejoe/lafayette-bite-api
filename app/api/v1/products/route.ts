@@ -5,9 +5,13 @@ import {
     errorResponse,
     parsePagination,
     buildMeta,
+    checkRateLimit,
 } from '@/lib/api-helpers'
 
 export async function GET(request: NextRequest) {
+    const rateLimitResponse = await checkRateLimit(request)
+    if (rateLimitResponse) return rateLimitResponse
+
     const { searchParams } = new URL(request.url)
 
     // Pagination

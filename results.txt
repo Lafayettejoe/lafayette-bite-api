@@ -1,0 +1,315 @@
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}
+
+C:\Users\USER\OneDrive\Desktop\lafayette-bite-api>curl -s -o nul -w "%%{http_code}\n" http://localhost:3000/api/v1/products 
+%{http_code}

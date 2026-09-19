@@ -6,6 +6,7 @@ import {
     parsePagination,
     buildMeta,
     handleZodError,
+    checkRateLimit,
 } from '@/lib/api-helpers'
 import { z } from 'zod'
 import { OrderStatus } from '@prisma/client'
@@ -26,6 +27,9 @@ const createOrderSchema = z.object({
 })
 
 export async function GET(request: NextRequest) {
+    const rateLimitResponse = await checkRateLimit(request)
+    if (rateLimitResponse) return rateLimitResponse
+
     const { searchParams } = new URL(request.url)
 
     const pagination = parsePagination(searchParams)
@@ -90,8 +94,17 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
+    const rateLimitResponse = await checkRateLimit(request)
+    if (rateLimitResponse) return rateLimitResponse
+
+    let body: unknown
     try {
-        const body = await request.json()
+        body = await request.json()
+    } catch {
+        return errorResponse('INVALID_JSON', 'Request body must be valid JSON', 400)
+    }
+
+    try {
         const parsed = createOrderSchema.safeParse(body)
 
         if (!parsed.success) {

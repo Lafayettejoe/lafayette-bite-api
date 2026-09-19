@@ -1,11 +1,14 @@
 import { NextRequest } from 'next/server'
 import { db } from '@/lib/db'
-import { successResponse, errorResponse } from '@/lib/api-helpers'
+import { successResponse, errorResponse, checkRateLimit } from '@/lib/api-helpers'
 
 export async function GET(
     request: NextRequest,
     { params }: { params: Promise<{ id: string }> }
 ) {
+    const rateLimitResponse = await checkRateLimit(request)
+    if (rateLimitResponse) return rateLimitResponse
+
     const { id } = await params
 
     const customer = await db.customer.findUnique({

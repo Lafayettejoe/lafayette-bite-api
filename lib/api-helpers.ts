@@ -67,6 +67,7 @@ import { apiRateLimit } from './ratelimit'
 export async function checkRateLimit(request: NextRequest) {
     const ip = request.headers.get('x-forwarded-for') ?? '127.0.0.1'
     const { success, limit, remaining, reset } = await apiRateLimit.limit(ip)
+    console.log('[ratelimit]', { ip, success, remaining })
 
     if (!success) {
         return NextResponse.json(
