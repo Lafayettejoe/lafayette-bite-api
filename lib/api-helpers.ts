@@ -22,7 +22,9 @@ export function errorResponse(
 }
 
 // ── Parse pagination query params ────────────────────────
-export function parsePagination(searchParams: URLSearchParams) {
+type PaginationResult = { limit: number; offset: number } | { error: string }
+
+export function parsePagination(searchParams: URLSearchParams): PaginationResult {
     const MAX_LIMIT = 100
     const DEFAULT_LIMIT = 20
 
