@@ -331,4 +331,4 @@ A minimal storefront page calls this API's live URL, lists products with categor
 
 ## Live API
 
-**URL:** _add once deployed_
+**URL:** https://lafayette-bite-api-nine.vercel.app
