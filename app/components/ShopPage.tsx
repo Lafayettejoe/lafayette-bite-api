@@ -53,6 +53,7 @@ type CartLine = {
     qty: number
 }
 
+const API_BASE_URL = 'https://lafayette-bite-api-nine.vercel.app'
 const PAGE_SIZE = 8
 const SEARCH_LIMIT = 100
 
@@ -163,7 +164,7 @@ export function ShopPage() {
 
     // Load categories once.
     useEffect(() => {
-        fetch('/api/v1/categories?limit=20')
+        fetch(`${API_BASE_URL}/api/v1/categories?limit=20`)
             .then((r) => r.json())
             .then((json) => setCategories(json.data ?? []))
             .catch(() => setCategories([]))
@@ -191,7 +192,7 @@ export function ShopPage() {
         }
 
         try {
-            const res = await fetch(`/api/v1/products?${params.toString()}`)
+            const res = await fetch(`${API_BASE_URL}/api/v1/products?${params.toString()}`)
             const json = (await res.json()) as { data: Product[]; meta: Meta } | ApiError
             if (!res.ok || 'error' in json) {
                 const message = 'error' in json ? json.error.message : 'Something went wrong loading products.'
