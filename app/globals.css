@@ -689,3 +689,39 @@ select {
     display: none;
   }
 }
+
+.lb-checkout-form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lb-checkout-form input {
+  border: 1px solid var(--color-border);
+  background: var(--color-cream);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: var(--color-chocolate);
+}
+
+.lb-checkout-error {
+  color: #7a2e2e;
+  font-size: 13px;
+  margin: 0;
+}
+
+.lb-order-success {
+  padding: 24px 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lb-order-success-id {
+  font-size: 12px;
+  color: var(--color-chocolate-soft);
+  font-family: monospace;
+}

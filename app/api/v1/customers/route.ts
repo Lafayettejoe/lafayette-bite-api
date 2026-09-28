@@ -6,7 +6,9 @@ import {
     parsePagination,
     buildMeta,
     checkRateLimit,
+    handleZodError,
 } from '@/lib/api-helpers'
+import { z } from 'zod'
 
 export async function GET(request: NextRequest) {
     const rateLimitResponse = await checkRateLimit(request)
@@ -32,7 +34,6 @@ export async function GET(request: NextRequest) {
         )
     }
 
-    // Filter by name search
     const search = searchParams.get('search')
     const where = search
         ? {
@@ -57,4 +58,45 @@ export async function GET(request: NextRequest) {
     ])
 
     return successResponse(customers, buildMeta(total, limit, offset))
+}
+
+// ── NEW: create (or reuse) a customer ─────────────────────
+const createCustomerSchema = z.object({
+    name: z.string().min(1, 'name is required'),
+    email: z.string().email('a valid email is required'),
+    phone: z.string().optional(),
+    address: z.string().optional(),
+})
+
+export async function POST(request: NextRequest) {
+    const rateLimitResponse = await checkRateLimit(request)
+    if (rateLimitResponse) return rateLimitResponse
+
+    let body: unknown
+    try {
+        body = await request.json()
+    } catch {
+        return errorResponse('INVALID_JSON', 'Request body must be valid JSON', 400)
+    }
+
+    const parsed = createCustomerSchema.safeParse(body)
+    if (!parsed.success) {
+        return handleZodError(parsed.error)
+    }
+
+    const { name, email, phone, address } = parsed.data
+
+    try {
+        // find-or-create by email, so placing a second order with the same
+        // email never creates a duplicate customer row
+        const customer = await db.customer.upsert({
+            where: { email },
+            update: { name, phone: phone ?? undefined, address: address ?? undefined },
+            create: { name, email, phone, address },
+        })
+
+        return successResponse(customer, undefined, 201)
+    } catch {
+        return errorResponse('SERVER_ERROR', 'Something went wrong', 500)
+    }
 }

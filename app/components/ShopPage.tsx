@@ -134,6 +134,11 @@ export function ShopPage() {
     const [cart, setCart] = useState<CartLine[]>([])
     const [cartOpen, setCartOpen] = useState(false)
     const [mobileNavOpen, setMobileNavOpen] = useState(false)
+    const [customerName, setCustomerName] = useState('')
+    const [customerEmail, setCustomerEmail] = useState('')
+    const [placingOrder, setPlacingOrder] = useState(false)
+    const [orderError, setOrderError] = useState<string | null>(null)
+    const [orderSuccessId, setOrderSuccessId] = useState<string | null>(null)
 
     const isSearching = search.trim().length > 0
 
@@ -271,6 +276,73 @@ export function ShopPage() {
 
     function removeFromCart(key: string) {
         setCart((prev) => prev.filter((l) => l.key !== key))
+    }
+
+    // URL of the deployed Task 2 (jobs) app — set via env var, see below.
+    const JOBS_API_URL = process.env.NEXT_PUBLIC_JOBS_API_URL ?? ''
+
+    async function placeOrder() {
+        setOrderError(null)
+
+        if (!customerName.trim() || !customerEmail.trim()) {
+            setOrderError('Please enter your name and email.')
+            return
+        }
+        if (cart.length === 0) return
+
+        setPlacingOrder(true)
+        try {
+            const customerRes = await fetch('/api/v1/customers', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: customerName.trim(), email: customerEmail.trim() }),
+            })
+            const customerJson = await customerRes.json()
+            if (!customerRes.ok || 'error' in customerJson) {
+                throw new Error(customerJson.error?.message ?? 'Could not save your details.')
+            }
+            const customerId = customerJson.data.id as string
+
+            const orderRes = await fetch('/api/v1/orders', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    customerId,
+                    items: cart.map((l) => ({
+                        productId: l.productId,
+                        variantId: l.variantId,
+                        quantity: l.qty,
+                    })),
+                }),
+            })
+            const orderJson = await orderRes.json()
+            if (!orderRes.ok || 'error' in orderJson) {
+                throw new Error(orderJson.error?.message ?? 'Could not place your order.')
+            }
+
+            if (JOBS_API_URL) {
+                fetch(`${JOBS_API_URL}/api/orders`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        customerName: customerName.trim(),
+                        customerEmail: customerEmail.trim(),
+                        items: cart.map((l) => ({
+                            name: `${l.productName} (${l.variantLabel})`,
+                            quantity: l.qty,
+                            unitPriceKobo: l.priceKobo,
+                        })),
+                    }),
+                }).catch(() => { })
+            }
+
+            setOrderSuccessId(orderJson.data.id as string)
+            setCart([])
+        } catch (err) {
+            setOrderError(err instanceof Error ? err.message : 'Something went wrong placing your order.')
+        } finally {
+            setPlacingOrder(false)
+        }
     }
 
     const cartCount = cart.reduce((n, l) => n + l.qty, 0)
@@ -563,7 +635,23 @@ export function ShopPage() {
                                 <Icon path={ICONS.close} size={18} />
                             </button>
                         </div>
-                        {cart.length === 0 ? (
+                        {orderSuccessId ? (
+                            <div className="lb-order-success">
+                                <p>🎉 Order placed! A confirmation email is on its way to {customerEmail}.</p>
+                                <p className="lb-order-success-id">Order ID: {orderSuccessId}</p>
+                                <button
+                                    className="lb-add-btn"
+                                    onClick={() => {
+                                        setOrderSuccessId(null)
+                                        setCustomerName('')
+                                        setCustomerEmail('')
+                                        setCartOpen(false)
+                                    }}
+                                >
+                                    Continue shopping
+                                </button>
+                            </div>
+                        ) : cart.length === 0 ? (
                             <p className="lb-cart-empty">Your cart is empty. Add something delicious!</p>
                         ) : (
                             <>
@@ -594,6 +682,24 @@ export function ShopPage() {
                                 <div className="lb-cart-total">
                                     <span>Total</span>
                                     <span>{formatKobo(cartTotalKobo)}</span>
+                                </div>
+                                <div className="lb-checkout-form">
+                                    <input
+                                        type="text"
+                                        placeholder="Your name"
+                                        value={customerName}
+                                        onChange={(e) => setCustomerName(e.target.value)}
+                                    />
+                                    <input
+                                        type="email"
+                                        placeholder="Your email"
+                                        value={customerEmail}
+                                        onChange={(e) => setCustomerEmail(e.target.value)}
+                                    />
+                                    {orderError && <p className="lb-checkout-error">{orderError}</p>}
+                                    <button className="lb-add-btn" onClick={placeOrder} disabled={placingOrder}>
+                                        {placingOrder ? 'Placing order…' : 'Place Order'}
+                                    </button>
                                 </div>
                             </>
                         )}
