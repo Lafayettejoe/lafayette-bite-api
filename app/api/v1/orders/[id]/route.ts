@@ -8,6 +8,7 @@ import {
 } from '@/lib/api-helpers'
 import { z } from 'zod'
 import { OrderStatus } from '@prisma/client'
+import { isValidOrderTransition } from '@/lib/order-status'
 
 const updateOrderSchema = z.object({
     status: z.nativeEnum(OrderStatus),
@@ -78,12 +79,11 @@ export async function PATCH(
             return handleZodError(parsed.error)
         }
 
-        // Prevent updating a delivered or cancelled order
-        if (order.status === 'DELIVERED' || order.status === 'CANCELLED') {
+        if (!isValidOrderTransition(order.status, parsed.data.status)) {
             return errorResponse(
                 'INVALID_TRANSITION',
-                `Cannot update an order with status ${order.status}`,
-                400
+                `Cannot move an order from ${order.status} to ${parsed.data.status}`,
+                409
             )
         }
 
